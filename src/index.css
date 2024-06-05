@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Footer */
+.navAction {
+  &:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+}
