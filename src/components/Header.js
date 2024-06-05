@@ -19,7 +19,7 @@ const Header = () => {
         </Button>
         <Select defaultValue="en" style={{ marginRight: 20 }}>
           <MenuItem value="en">English</MenuItem>
-          <MenuItem value="ru">Hebrew</MenuItem>
+          <MenuItem value="he">Hebrew</MenuItem>
         </Select>
         <TextField placeholder="Send feedback" variant="outlined" size="small" />
       </Toolbar>
