@@ -37,11 +37,11 @@ const Object3DViewer = ({ selectedObject }) => {
   const createGeometry = (selectedObject) => {
     switch (selectedObject) {
       case 'Rectangle':
-        return new THREE.BoxGeometry(3, 3, 3); // Увеличить размер прямоугольника
+        return new THREE.BoxGeometry(3, 3, 3);
       case 'Triangle':
-        return new THREE.ConeGeometry(2, 4, 3); // Увеличить размер треугольника
+        return new THREE.ConeGeometry(2, 4, 3);
       case 'Circle':
-        return new THREE.SphereGeometry(2, 32, 32); // Увеличить размер круга
+        return new THREE.SphereGeometry(2, 32, 32);
       default:
         return new THREE.BoxGeometry();
     }
