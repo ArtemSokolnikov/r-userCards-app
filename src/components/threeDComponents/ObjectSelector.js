@@ -8,8 +8,8 @@ const ObjectSelector = ({ selectedObject, onSelectObject }) => {
 
   return (
     <Select value={selectedObject} onChange={handleChange}>
-      <MenuItem value="Rectangle">Rectangle</MenuItem>
       <MenuItem value="Triangle">Triangle</MenuItem>
+      <MenuItem value="Rectangle">Rectangle</MenuItem>
       <MenuItem value="Circle">Circle</MenuItem>
     </Select>
   );

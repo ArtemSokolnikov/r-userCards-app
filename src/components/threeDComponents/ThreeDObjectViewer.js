@@ -3,7 +3,7 @@ import Object3DViewer from './Object3DViewer';
 import ObjectSelector from './ObjectSelector';
 
 const ThreeDObjectViewer = () => {
-  const [selectedObject, setSelectedObject] = useState('Rectangle');
+  const [selectedObject, setSelectedObject] = useState('Circle');
 
   return (
     <div style={{ display: 'flex',flexDirection: 'column',alignItems: 'center',gap: '10px',padding: '10px'}}>

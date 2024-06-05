@@ -14,6 +14,7 @@ const Object3DViewer = ({ selectedObject }) => {
 
     const geometry = createGeometry(selectedObject);
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     object = new THREE.Mesh(geometry, material);
     scene.add(object);
 
@@ -36,11 +37,11 @@ const Object3DViewer = ({ selectedObject }) => {
   const createGeometry = (selectedObject) => {
     switch (selectedObject) {
       case 'Rectangle':
-        return new THREE.BoxGeometry();
+        return new THREE.BoxGeometry(3, 3, 3); // Увеличить размер прямоугольника
       case 'Triangle':
-        return new THREE.ConeGeometry();
+        return new THREE.ConeGeometry(2, 4, 3); // Увеличить размер треугольника
       case 'Circle':
-        return new THREE.SphereGeometry();
+        return new THREE.SphereGeometry(2, 32, 32); // Увеличить размер круга
       default:
         return new THREE.BoxGeometry();
     }
